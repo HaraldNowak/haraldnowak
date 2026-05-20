@@ -1,0 +1,102 @@
+/* General styles for the personal webpage */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Header/Hero Section --- */
+.hero {
+    background-color: #2c3e50; /* Dark blue background */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures image covers the area */
+    border: 5px solid #3498db; /* A nice border color */
+    margin-bottom: 20px;
+    /* Placeholder style reminder */
+    background-color: #ccc; 
+}
+
+.hero h1 {
+    margin: 10px 0;
+    font-size: 3em;
+    color: white;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #bdc3c7;
+}
+
+/* --- Section Styling --- */
+section {
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: #2980b9; /* Primary header color */
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+
+li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2980b9;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    .hero h1 {
+        font-size: 2.5em;
+    }
+}
