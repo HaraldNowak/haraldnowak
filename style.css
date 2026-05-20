@@ -36,7 +36,10 @@ body {
 }
 
 .hero h1 {
-    margin: 10px 0;
+    margin: 0; /* Remove automatic margins */
+margin-bottom: 5px;
+align-self: center; /* Vertically center relative to siblings */
+
     font-size: 3em;
     color: white;
 }
