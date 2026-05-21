@@ -6,58 +6,85 @@
     <title>Harald Nowak | Programmer</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="spa-body">
+    <nav class="main-nav">
+        <div class="menucontainer">
+            <a href="#about" class="nav-link" data-target="about">About</a>
+            <a href="#experience" class="nav-link" data-target="experience">Experience</a>
+            <a href="#expertise" class="nav-link" data-target="expertise">Expertise</a>
+            <a href="#education" class="nav-link" data-target="education">Education</a>
+            <a href="#projects" class="nav-link" data-target="projects">Projects</a>
+        </div>
+    </nav>
+
     <header class="hero">
-        <div class="container">
-            <img src="me.jpg" alt="Harald Nowak Profile Picture" class="profile-img">
-            <h1>Harald Nowak</h1>
-            <p class="tagline">Software Engineer | Expert in Algorithms & Architecture</p>
+        <div class="herocontainer">
+            <img style="" src="me.jpg" alt="Harald Nowak Profile Picture" class="profile-img">
+            <div class="hero-text-content">
+				<h3 class="tagline">Harald Fritz Nowak</h3>
+                <p class="tagline">Software Engineer | Expert in Algorithms & Architecture</p>
+            </div>
         </div>
     </header>
 
     <main class="container">
-        <section id="about">
+        <section id="about" data-section-id="about">
             <h2>About Me</h2>
+			<p>My name is Harald Nowak (or Harald Fritz Nowak in full), I was born on the 15.11.1969 in Vienna.</p>
             <p>I am a seasoned programmer with a deep background in both theoretical science and practical software development. My career has allowed me to combine rigorous problem-solving skills with real-world industrial application.</p>
         </section>
 
-        <section id="experience">
+        <section id="experience" data-section-id="experience">
             <h2>Professional Experience</h2>
             <p>I started my programming journey with a strong foundation in C++, which has been a source of passion. Over the last decade, I primarily focused on Java, working with various clients in the Finance sector. Most recently, my work has been almost exclusively dedicated to Generali, tackling complex, large-scale systems.</p>
         </section>
 
-        <section id="expertise">
+        <section id="expertise" data-section-id="expertise">
             <h2>Expertise Areas</h2>
             <p>My expertise is highly multidisciplinary, lying at the intersection of theoretical computation and engineering practice. I specialize in:</p>
             <ul>
                 <li>Algorithms and Data Structures</li>
                 <li>System Architecture and Connectivity</li>
                 <li>Databases and Data Modeling</li>
-                <li>Difficult Programming Tasks & Bug Analysis</li>
-                <li>Optimization Algorithms & Performance Tuning</li>
+                <li>Difficult Programming Tasks</li>
+                <li>Bug Analysis</li>
+                <li>Optimization Algorithms</li>
+                <li>Performance Tuning</li>
                 <li>Simulation (Control Systems, 3D Programming)</li>
                 <li>Mathematical Problem Solving</li>
             </ul>
         </section>
 
-        <section id="education">
-            <h2>Education & Languages</h2>
+        <section id="education" data-section-id="education">
+            <h2>Education & Programming Languages</h2>
             <h3>Education</h3>
             <ul>
-                <li><strong>BSc in Biology/Zoology</strong> (2004)</li>
-                <li><strong>Physics</strong> (Specialization in Computational Physics, 1988)</li>
+                <li><strong data-list-item>BSc in Biology/Zoology</strong> (2004)</li>
+                <li><strong data-list-item>Physics</strong> (Specialization in Computational Physics, 1988++)</li>
+                <li><strong data-list-item>Matura</strong> (1988)</li>
             </ul>
-            
-            <h3>Languages</h3>
-            <p>I am fluent in multiple programming and scripting languages, including: 
-            C, C++, Java, JavaScript, PHP, Python, Mathematica, Lua, and Unix Bash scripts, among others.</p>
+            <h3>Programming Languages</h3>
+            <p>I am fluent in multiple programming and scripting languages, including:
+            C, C++, Java, JavaScript, PHP, Python, Mathematica, Lua, and Unix Bash scripts, amongst others.</p>
+        </section>
+
+        <section id="projects" data-section-id="projects">
+            <h2>Projects</h2>
+            <h3>With over 30 years of programming experience, a few selected projects:</h3>
+            <ul>
+                <li><strong data-list-item>InfraSoft</strong> FAPCOM/FAPDATA - inhouse project (C++)</li>
+                <li><strong data-list-item>Philips</strong> SpeechNote (C++)</li>
+                <li><strong data-list-item>Spardat</strong> (C++)</li>
+                <li><strong data-list-item>Generali</strong> DZS (Datenzugriffsschicht) + Phoenix (C++ + Java)</li>
+                <li><strong data-list-item>Generali</strong> Vertragssystem EVTG & Verkaufssystem GAPA (Java)</li>
+            </ul>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Harald Nowak. Built for GitHub deployment.</p>
-        </div>
+    <footer class="footer">
+        <p>&copy; 2026 Harald Fritz Nowak.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
